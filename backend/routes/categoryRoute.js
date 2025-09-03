@@ -2,7 +2,7 @@ import express from "express";
 import Product from "../models/Product.js";
 import upload from "../config/multer.js";
 import cloudinary from "../config/cloudinary.js";
-import { Protect } from "@clerk/clerk-react";
+// import { Protect } from "@clerk/clerk-react";
 import { ClerkExpressWithAuth } from "@clerk/clerk-sdk-node";
 
 const router = express.Router();
