@@ -22,7 +22,7 @@ const AdminDashboard = () => {
   const [editingProduct, setEditingProduct] = useState(null);
   const [activeTab, setActiveTab] = useState("products");
   const [isFormVisible, setIsFormVisible] = useState(false);
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const [form, setForm] = useState({
     name: "",

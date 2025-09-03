@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   const { getToken, isLoaded, isSignedIn } = useAuth();
   const { fetchCart } = useContext(CartContext);
   const { session } = useClerk();
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleAddToCart = async () => {
     if (!isSignedIn) {

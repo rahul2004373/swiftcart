@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(null);
   const { isLoaded, isSignedIn } = useAuth();
   const { session } = useClerk();
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const fetchCart = async () => {
     if (!isSignedIn) {

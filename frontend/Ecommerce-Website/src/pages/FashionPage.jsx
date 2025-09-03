@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 const FashionPage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchElectronics = async () => {

@@ -28,7 +28,7 @@ const Header = () => {
   const [isSearching, setIsSearching] = useState(false); // State to show loading/searching status
   const [showSearchResults, setShowSearchResults] = useState(false); // State to control dropdown visibility
   const searchDropdownRef = useRef(null); // Ref for closing dropdown on outside click
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const categories = [
     { name: "All Categories", icon: Grid3X3, href: "/api/products" },
