@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 
 app.use(
   cors({
-    origin: "https://swiftcart-ashen.vercel.app",
+    origin: "https://swiftcart-puce.vercel.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
