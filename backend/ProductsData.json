@@ -1,0 +1,389 @@
+[
+  {
+    "name": "The Art of Thinking Clearly",
+    "description": "A book that explains cognitive biases with real-life examples.",
+    "price": 349,
+    "countInStock": 15,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Atomic Habits",
+    "description": "An easy & proven way to build good habits and break bad ones.",
+    "price": 429,
+    "countInStock": 25,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Deep Work",
+    "description": "Rules for focused success in a distracted world.",
+    "price": 499,
+    "countInStock": 10,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Clean Code",
+    "description": "A Handbook of Agile Software Craftsmanship.",
+    "price": 899,
+    "countInStock": 5,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Rich Dad Poor Dad",
+    "description": "What the rich teach their kids about money that the poor do not.",
+    "price": 379,
+    "countInStock": 20,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Ikigai",
+    "description": "The Japanese secret to a long and happy life.",
+    "price": 299,
+    "countInStock": 30,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Sapiens",
+    "description": "A Brief History of Humankind by Yuval Noah Harari.",
+    "price": 649,
+    "countInStock": 12,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Man's Search for Meaning",
+    "description": "Psychological insight into life in Nazi death camps.",
+    "price": 379,
+    "countInStock": 8,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "The Alchemist",
+    "description": "A novel about a shepherd’s journey of self-discovery.",
+    "price": 299,
+    "countInStock": 18,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Rework",
+    "description": "Change the way you work forever.",
+    "price": 499,
+    "countInStock": 14,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Zero to One",
+    "description": "Notes on startups and how to build the future.",
+    "price": 479,
+    "countInStock": 22,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+  {
+    "name": "Can't Hurt Me",
+    "description": "Master your mind and defy the odds by David Goggins.",
+    "price": 599,
+    "countInStock": 16,
+    "imageUrl": "placeholder.jpg",
+    "category": "books"
+  },
+
+  {
+    "name": "Men's Cotton T-Shirt",
+    "description": "Premium round neck tee for everyday wear.",
+    "price": 499,
+    "countInStock": 30,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Women's Denim Jacket",
+    "description": "Classic slim-fit jacket for stylish layering.",
+    "price": 1299,
+    "countInStock": 18,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Sports Shoes",
+    "description": "Lightweight breathable running shoes.",
+    "price": 2299,
+    "countInStock": 12,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Casual Sneakers",
+    "description": "Everyday unisex sneakers for comfort and style.",
+    "price": 1599,
+    "countInStock": 25,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Formal Trousers",
+    "description": "Slim-fit formal pants for office wear.",
+    "price": 799,
+    "countInStock": 10,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Ethnic Kurta Set",
+    "description": "Cotton kurta with churidar and dupatta.",
+    "price": 1199,
+    "countInStock": 14,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Winter Hoodie",
+    "description": "Fleece-lined warm hoodie for cold weather.",
+    "price": 999,
+    "countInStock": 20,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Leather Belt",
+    "description": "Classic leather belt for men.",
+    "price": 449,
+    "countInStock": 40,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Sunglasses",
+    "description": "UV-protected fashionable sunglasses.",
+    "price": 699,
+    "countInStock": 30,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Men's Formal Shirt",
+    "description": "Slim-fit striped formal shirt.",
+    "price": 899,
+    "countInStock": 15,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Woolen Scarf",
+    "description": "Soft warm scarf for winter season.",
+    "price": 399,
+    "countInStock": 50,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+  {
+    "name": "Fitness Band",
+    "description": "Water-resistant activity tracker with heart rate monitor.",
+    "price": 1399,
+    "countInStock": 22,
+    "imageUrl": "placeholder.jpg",
+    "category": "fashion"
+  },
+
+  {
+    "name": "Cricket Bat",
+    "description": "Grade A English willow bat for professional use.",
+    "price": 3499,
+    "countInStock": 8,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Football",
+    "description": "FIFA-approved match quality football.",
+    "price": 799,
+    "countInStock": 25,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Badminton Racket",
+    "description": "Lightweight carbon fiber racket with grip.",
+    "price": 1299,
+    "countInStock": 14,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Dumbbell Set",
+    "description": "Adjustable dumbbell set with steel plates.",
+    "price": 2199,
+    "countInStock": 10,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Yoga Mat",
+    "description": "Non-slip textured yoga mat with strap.",
+    "price": 599,
+    "countInStock": 32,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Skipping Rope",
+    "description": "Speed skipping rope for cardio workouts.",
+    "price": 299,
+    "countInStock": 50,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Tennis Ball Set",
+    "description": "Pack of 3 pressurized tennis balls.",
+    "price": 249,
+    "countInStock": 45,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Hiking Backpack",
+    "description": "50L waterproof hiking and travel backpack.",
+    "price": 1799,
+    "countInStock": 9,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Knee Pads",
+    "description": "Protective gear for volleyball and skating.",
+    "price": 349,
+    "countInStock": 27,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Boxing Gloves",
+    "description": "Premium PU leather gloves for training.",
+    "price": 1599,
+    "countInStock": 11,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Running Shorts",
+    "description": "Quick dry shorts with side pockets.",
+    "price": 499,
+    "countInStock": 35,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+  {
+    "name": "Wrist Support Band",
+    "description": "Elastic wrist brace for weightlifting.",
+    "price": 199,
+    "countInStock": 60,
+    "imageUrl": "placeholder.jpg",
+    "category": "sports"
+  },
+
+  {
+    "name": "Wireless Mouse",
+    "description": "Ergonomic optical mouse with USB receiver.",
+    "price": 699,
+    "countInStock": 20,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Bluetooth Earbuds",
+    "description": "Noise-cancelling wireless earbuds with charging case.",
+    "price": 1499,
+    "countInStock": 18,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Laptop Cooling Pad",
+    "description": "USB-powered stand with adjustable fan speeds.",
+    "price": 899,
+    "countInStock": 15,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Smartphone Tripod",
+    "description": "Flexible mini tripod for mobile photography.",
+    "price": 349,
+    "countInStock": 35,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "LED Monitor 24-inch",
+    "description": "Full HD IPS display with anti-glare screen.",
+    "price": 8499,
+    "countInStock": 7,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit blue switch mechanical keyboard.",
+    "price": 2999,
+    "countInStock": 12,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "USB-C Hub",
+    "description": "7-in-1 multiport adapter for laptops.",
+    "price": 1199,
+    "countInStock": 19,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Smartwatch",
+    "description": "Fitness tracking smartwatch with heart rate and notifications.",
+    "price": 3299,
+    "countInStock": 10,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Portable Speaker",
+    "description": "Waterproof Bluetooth speaker with deep bass.",
+    "price": 1799,
+    "countInStock": 16,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Laptop Stand",
+    "description": "Aluminum adjustable stand for laptops and tablets.",
+    "price": 999,
+    "countInStock": 24,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Gaming Headset",
+    "description": "Over-ear surround sound headphones with mic.",
+    "price": 2299,
+    "countInStock": 13,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  },
+  {
+    "name": "Power Bank 20000mAh",
+    "description": "Fast-charging power bank with dual USB ports.",
+    "price": 1599,
+    "countInStock": 22,
+    "imageUrl": "placeholder.jpg",
+    "category": "electronics"
+  }
+]
