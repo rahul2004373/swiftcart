@@ -7,6 +7,7 @@ const CheckOutPage = () => {
   const { getToken } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const cartItems = location.state?.cartItems || [];
   const totalPrice = location.state?.totalPrice || 0;
@@ -57,13 +58,10 @@ const CheckOutPage = () => {
       }
 
       // 2️⃣ Create Razorpay order from backend
-      const { data } = await axios.post(
-        "http://localhost:8080/api/payment/create-order",
-        {
-          amount: totalPrice,
-          currency: "INR",
-        }
-      );
+      const { data } = await axios.post(`${API_URL}/api/payment/create-order`, {
+        amount: totalPrice,
+        currency: "INR",
+      });
 
       if (!data?.order) {
         console.error("Backend response error:", data);
@@ -97,7 +95,7 @@ const CheckOutPage = () => {
             console.log("Clerk token before order save:", token);
 
             const orderRes = await axios.post(
-              "http://localhost:8080/api/orders/create",
+              `${API_URL}/api/orders/create`,
               {
                 products: formattedProducts,
                 shippingAddress: formData,

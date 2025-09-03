@@ -9,14 +9,13 @@ const ModernProductPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedQuantity, setSelectedQuantity] = useState(1);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(
-          `http://localhost:8080/api/products/${id}`
-        );
+        const response = await axios.get(`${API_URL}/api/products/${id}`);
         setProduct(response.data);
       } catch (err) {
         setError("Product not found or an error occurred.");

@@ -28,6 +28,7 @@ const Header = () => {
   const [isSearching, setIsSearching] = useState(false); // State to show loading/searching status
   const [showSearchResults, setShowSearchResults] = useState(false); // State to control dropdown visibility
   const searchDropdownRef = useRef(null); // Ref for closing dropdown on outside click
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const categories = [
     { name: "All Categories", icon: Grid3X3, href: "/api/products" },
@@ -50,7 +51,7 @@ const Header = () => {
       // **IMPORTANT: Adjust this URL to your actual backend search endpoint**
       // Example: If your backend search is at /api/products/search?q=query
       const response = await axios.get(
-        `http://localhost:8080/api/products/search?q=${searchQuery}`
+        `${API_URL}/api/products/search?q=${searchQuery}`
       );
       setSearchResults(response.data);
       setShowSearchResults(true); // Show dropdown with results

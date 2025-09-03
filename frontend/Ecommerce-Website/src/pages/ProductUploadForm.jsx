@@ -10,6 +10,7 @@ const ProductUploadForm = () => {
 
   const [image, setImage] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("");
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value });
@@ -35,7 +36,7 @@ const ProductUploadForm = () => {
         formData.append("image", image); // must match multer field name
       }
 
-      const res = await fetch("http://localhost:8080/api/products/upload", {
+      const res = await fetch(`${API_URL}/api/products/upload`, {
         method: "POST",
         body: formData,
       });

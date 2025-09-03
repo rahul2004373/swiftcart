@@ -10,6 +10,7 @@ const ProductCard = ({ product }) => {
   const { getToken, isLoaded, isSignedIn } = useAuth();
   const { fetchCart } = useContext(CartContext);
   const { session } = useClerk();
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleAddToCart = async () => {
     if (!isSignedIn) {
@@ -20,7 +21,7 @@ const ProductCard = ({ product }) => {
     try {
       const token = await session.getToken();
       await axios.post(
-        "http://localhost:8080/api/cart/add",
+        `${API_URL}/api/cart/add`,
         { productId: product._id, quantity: 1 },
         { headers: { Authorization: `Bearer ${token}` } }
       );

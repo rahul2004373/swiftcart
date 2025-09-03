@@ -11,12 +11,13 @@ const ProductPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const categories = ["all", "books", "sports", "fashion", "electronics"];
+  const API_URL = process.env.REACT_APP_API_URL;
 
   // Fetch products from backend
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/products");
+        const res = await axios.get(`${API_URL}/api/products`);
         setProducts(res.data);
         // console.log("All Products", res.data);
       } catch (err) {

@@ -6,13 +6,12 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const ElectronicsPage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchElectronics = async () => {
       try {
-        const { data } = await axios.get(
-          "http://localhost:8080/category/books"
-        );
+        const { data } = await axios.get(`${API_URL}/category/books`);
         setProducts(data);
         setLoading(false);
       } catch (err) {

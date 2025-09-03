@@ -5,13 +5,12 @@ import ProductCard from "../components/ProductCard";
 const ElectronicsPage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchElectronics = async () => {
       try {
-        const { data } = await axios.get(
-          "http://localhost:8080/category/sports"
-        );
+        const { data } = await axios.get(`${API_URL}/category/sports`);
         setProducts(data);
         setLoading(false);
       } catch (err) {

@@ -11,6 +11,7 @@ const SearchBar = () => {
   const [noResults, setNoResults] = useState(false);
   const popupRef = useRef(null);
   const navigate = useNavigate();
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const delayDebounce = setTimeout(() => {
@@ -36,7 +37,7 @@ const SearchBar = () => {
   const searchProducts = async (searchTerm) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/products/search?q=${searchTerm}`
+        `${API_URL}/api/products/search?q=${searchTerm}`
       );
       if (Array.isArray(data)) {
         setResults(data);

@@ -7,13 +7,14 @@ const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null); // State to handle errors gracefully
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const fetchOrders = async () => {
     try {
       setLoading(true);
       setError(null); // Clear previous errors
       const token = await getToken();
-      const { data } = await axios.get("http://localhost:8080/api/orders/all", {
+      const { data } = await axios.get(`${API_URL}/api/orders/all`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setOrders(data.orders);
@@ -33,7 +34,7 @@ const AdminOrders = () => {
     try {
       const token = await getToken();
       await axios.put(
-        `http://localhost:8080/api/orders/update-status/${orderId}`,
+        `${API_URL}/api/orders/update-status/${orderId}`,
         { status },
         { headers: { Authorization: `Bearer ${token}` } }
       );

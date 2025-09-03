@@ -22,6 +22,8 @@ const AdminDashboard = () => {
   const [editingProduct, setEditingProduct] = useState(null);
   const [activeTab, setActiveTab] = useState("products");
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const API_URL = process.env.REACT_APP_API_URL;
+
   const [form, setForm] = useState({
     name: "",
     description: "",
@@ -35,7 +37,7 @@ const AdminDashboard = () => {
   const fetchProducts = async () => {
     try {
       const token = await getToken();
-      const res = await axios.get("http://localhost:8080/api/admin/products", {
+      const res = await axios.get(`${API_URL}/api/admin/products`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts(res.data);
@@ -48,7 +50,7 @@ const AdminDashboard = () => {
   const fetchUsers = async () => {
     try {
       const token = await getToken();
-      const res = await axios.get("http://localhost:8080/api/admin/users", {
+      const res = await axios.get(`${API_URL}/api/admin/users`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(res.data);
@@ -82,7 +84,7 @@ const AdminDashboard = () => {
 
       if (editingProduct) {
         await axios.put(
-          `http://localhost:8080/api/admin/products/${editingProduct._id}`,
+          `${API_URL}/api/admin/products/${editingProduct._id}`,
           formData,
           {
             headers: {
@@ -93,7 +95,7 @@ const AdminDashboard = () => {
         );
       } else {
         await axios.post(
-          "http://localhost:8080/api/admin/products/upload", // Retaining your original POST endpoint
+          `${API_URL}/api/admin/products/upload`, // Retaining your original POST endpoint
           formData,
           {
             headers: {
@@ -139,7 +141,7 @@ const AdminDashboard = () => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
         const token = await getToken();
-        await axios.delete(`http://localhost:8080/api/admin/products/${id}`, {
+        await axios.delete(`${API_URL}/api/admin/products/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         fetchProducts();
@@ -156,7 +158,7 @@ const AdminDashboard = () => {
         const token = await getToken();
         const newRole = currentRole === "admin" ? "user" : "admin";
         await axios.patch(
-          `http://localhost:8080/api/admin/users/${userId}/role`,
+          `${API_URL}/api/admin/users/${userId}/role`,
           { role: newRole },
           { headers: { Authorization: `Bearer ${token}` } }
         );

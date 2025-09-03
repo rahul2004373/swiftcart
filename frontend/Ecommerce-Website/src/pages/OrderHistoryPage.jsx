@@ -9,6 +9,7 @@ const OrderHistory = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedOrder, setExpandedOrder] = useState(null);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -16,12 +17,9 @@ const OrderHistory = () => {
       setError(null);
       try {
         const token = await getToken();
-        const { data } = await axios.get(
-          "http://localhost:8080/api/orders/my-orders",
-          {
-            headers: { Authorization: `Bearer ${token}` },
-          }
-        );
+        const { data } = await axios.get(`${API_URL}/api/orders/my-orders`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
         setOrders(data.orders);
       } catch (err) {
         console.error("Failed to fetch orders:", err);

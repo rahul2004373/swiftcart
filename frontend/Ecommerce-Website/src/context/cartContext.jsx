@@ -9,6 +9,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(null);
   const { isLoaded, isSignedIn } = useAuth();
   const { session } = useClerk();
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const fetchCart = async () => {
     if (!isSignedIn) {
@@ -18,7 +19,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       const token = await session.getToken();
-      const response = await axios.get("http://localhost:8080/api/cart", {
+      const response = await axios.get(`${API_URL}/api/cart`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCart(response.data);
@@ -36,7 +37,7 @@ export const CartProvider = ({ children }) => {
     try {
       const token = await session.getToken();
       const response = await axios.patch(
-        "http://localhost:8080/api/cart/update-quantity",
+        `${API_URL}/api/cart/update-quantity`,
         { productId, action: "increase" },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -57,7 +58,7 @@ export const CartProvider = ({ children }) => {
     try {
       const token = await session.getToken();
       const response = await axios.patch(
-        "http://localhost:8080/api/cart/update-quantity",
+        `${API_URL}/api/cart/update-quantity`,
         { productId, action: "decrease" },
         { headers: { Authorization: `Bearer ${token}` } }
       );
